@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app-header h1 {
+    color: #00ff7f;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mood-section {
+    margin-bottom: 20px;
+}
+
+.mood-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.mood-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mood-btn:hover {
+    transform: scale(1.2);
+}
+
+.history-section {
+    text-align: center;
+}
+
+.history-section h2 {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.mood-history {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.mood-entry {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #333333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.mood-entry .emoji {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    min-width: 25px;
+}
+
+.mood-entry .label {
+    flex-grow: 1;
+    text-align: left;
+    color: #00ff7f;
+    font-size: 0.95rem;
+}
+
+.mood-entry .timestamp {
+    color: #888;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.mood-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mood-history::-webkit-scrollbar-track {
+    background: #202020;
+}
+
+.mood-history::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.mood-history::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

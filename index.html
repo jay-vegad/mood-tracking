@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>Mood Tracker</h1>
+        </header>
+
+        <section class="mood-section">
+            <h2>Select Your Mood for Today</h2>
+            <div class="mood-selector">
+                <button class="mood-btn" data-mood="😊" data-label="Happy">😊</button>
+                <button class="mood-btn" data-mood="😍" data-label="Love">😍</button>
+                <button class="mood-btn" data-mood="😪" data-label="Boring">😪</button>
+                <button class="mood-btn" data-mood="😔" data-label="Sad">😔</button>
+                <button class="mood-btn" data-mood="😠" data-label="Angry">😠</button>
+            </div>
+        </section>
+
+        <section class="history-section">
+            <h2>Mood History</h2>
+            <div class="mood-history" id="moodHistory">
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
