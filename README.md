@@ -2,6 +2,7 @@
 
 A minimalist web application to track your daily moods with emoji-based logging and history visualization.
 
+# Live Link: https://mood-tracking-web.netlify.app/
 ## Features
 
 - **Simple Mood Selection**: Choose from 5 different mood emojis (Happy, Love, Boring, Sad, Angry)
